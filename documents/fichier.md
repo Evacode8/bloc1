@@ -1,36 +1,44 @@
+# Questions 1:
 
+1) DiffÃ©rences entre mÃ©thode https GET et POST 
 
-Questions 
+### La methode Get (obtenir/avoir) :
 
+> Est une requÃªte pour obtenir des informations/ des donnÃ©es adressÃ©es directement au serveur. 
+> 
+> Exemple: RequÃªte pour obtenir un fichier html au serveur web utilisÃ© pour affichier un site web (html) 
 
+RÃ©cupÃ©rer des donÃ©es publiques et faire des recherches:
 
-1) Différences entre méthode https GET et POST 
+Â Â Â Â  InconvÃ©nients
 
+> 1. Les requÃªtes GET entrainenent des problÃ¨mes de securitÃ© (car donnÃ©es accessible par d'autres utilisateurs ou logiciels mailveillants) 
+> 
+> (Source : digital IONOS; developper.mozilla)
+> 
+> 2. CapacitÃ© limitÃ©e: l'URL peut contenir qu'un certains nb de caractÃ¨res (env 2000)
 
+Avec cette methode, les donnÃ©es  transfÃ©rÃ©es sont directement dans L'URL
 
-La methode Get (obtenir/avoir) : 
-> est une requête pour obtenir des informations/ des données adressée directement au serveur
-Exemple: Requête pour obtenir un fichier html au serveur web
+### La methode POST (Poster)
 
-> utilisée pour affichier un site web (html) 
-> récupérer des dobbées publiques et faire des recherches Inconvénients
- 1) les requêtes GET entrainenent des problèmes de securité (car données accessible à d'autres utilisateurs ou logiciels mailveillants) 
-(Source : digital IONOS; developper.mozilla)
+Permet de soumettre des donnÃ©es au serveur afin d'Ãªtre traitÃ©es, le type de corps est indiquÃ© par l'en-tÃªte "content-type"
 
-2) capacité limitée: l'URL peut contenir qu'un certains nb de caractères (env 2000)
-Avec cette methode, les données à transférer sont directement dans L'URL
+Les paramÃ¨tres sont inclus dans le corps de la requÃªte HTTP, ce qui les rend invisibles dans l'URL.
 
-La methode POST (Poster)
+Envoie des donnÃ©es sensibles (Formulaire d'inscription PhP) avec une action effecutuer qui modifie l'Ã©tat du serveur (enregistrement des donÃ©es dans une BDD)
 
-Permet de soumettre des données au serveur afin d'être traitées, le type de corps est indiqué par l'en-tête "content-type"
-Les paramètres sont inclus dans le corps de la requête HTTP, ce qui les rend invisibles dans l'URL.
+Les requÃªtes posts ne sont pas mis en cache et ne sont pas visibles dans la barre d'adresse du navigateur
 
-Envoie des données sensibles (Formulaire d'inscription PhP) avec une action à effecutuer qui modifie l'état du serveur (enregistrement des donées dans une BDD)
+Avantages: 
 
-Les requêtes posts ne sont pas mis en cache et ne sont pas visibles dans la barre d'adresse du navigateur
+Â Â 1.Â ConfidentialitÃ© et flexibilitÃ© 
 
-avantages: 
-> Confidentialité et flexibilité  
-inconvenient:
-> si une page web a une maj, les données du formulaire doivent être de nouveau soumises 
-> les données ne peuvent pas être sauvegardées sous forme de marque-page avec l'URL.
+Inconvenients
+
+> 
+> 
+> 1) Si une page web a une maj, les donnÃ©es du formulaire doivent Ãªtre de nouveau soumises 
+>    
+> 
+> 2) les donnÃ©es ne peuvent pas Ãªtre sauvegardÃ©es sous forme de marque-page avec l'URL.
