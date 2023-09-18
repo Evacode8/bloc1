@@ -1,13 +1,12 @@
 <h1> Question 4 </h1>
 
 <h2> Le protocole "Sans état"</h2>
-<br>
+</br>
 <p> On dit qu'un protocole est sans état car il est auto-suffisant 
 <ul> 
-  <li>
-      HTTP1 est sans état <br>
-  HTTP/2 est avex état <br>
-  </li>
+  <li> HTTP1 est sans état </li> </br>
+  <li>HTTP/2 est avec état </li> <br>
+  
 
 </ul>
 
