@@ -23,7 +23,7 @@
   <li> Réponses informatives (100-199)</li>
     <li> Réponses de succès (200-293)</li>
       <li> Les messages de redirection (300-399) </li>
-        <li> Erreurs du client (400-499)</li>
+        <li> Erreurs du client (400-499) </li>
           <li> Erreurs du serveur (500-599)</li>
   </ol>
 <strong> Exemple: </strong> 100: Continue/ 200 OK / 300 Multiple Choice ou 404 "not found" 
