@@ -11,6 +11,5 @@
      <li> Path: (chemin), aqjout des infos supplémentaires à une URL, chemin sur le serveur vers la source</li>
      <li>query string : (chaîne de requête), ensemble de valeurs à retourner dans une demande d'opération. </li>
      <li> Fragement (anchor) : correspond à une ancre , permet au navigateur d'afficherla ressource <br> à l'endroit de ce marque-page.</li>
-     <li></li>
   </ul>
 </p>
