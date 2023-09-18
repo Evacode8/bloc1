@@ -25,10 +25,9 @@
       <li> Les messages de redirection (300-399) <li>
         <li> Erreurs du client (400-499)</li>
           <li> Erreurs du serveur (500-599)</li>
-  
   </ol>
-  <strong> Exemple: </strong> 100: Continue/ 200 OK / 300 Multiple Choice ou 404 "not found" 
+<strong> Exemple: </strong> 100: Continue/ 200 OK / 300 Multiple Choice ou 404 "not found" 
 </p>
 
-<h1> Quesiton 7 Negociation de continu  entre client serveur</h1>
+<h1> Quesiton 7: Negociation de continu  entre client serveur</h1>
 <p> Mecanisme pour servir différentes représentation s d'une ressource à partir d'un même URI pour indiquer<br> la meilleur réponse à l'utilisateur</p>
