@@ -10,7 +10,7 @@
 
 </ul>
 
-<span> HTTP1 </span>: les cookies ont ajoutés un état mais pas dans le protocole 1. Sans état car il ne necessite pas que le serveur conserve les infos ou l'état de chaque utilisateurs. 
+<strong> HTTP1 </strong>: les cookies ont ajoutés un état mais pas dans le protocole 1. Sans état car il ne necessite pas que le serveur conserve les infos ou l'état de chaque utilisateurs. 
 
 <br>
 signifie que la connexion entre le navigateur et le serveur est perdue une fois la transaction terminée. 
