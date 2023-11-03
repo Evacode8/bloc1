@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Entraînement JS</title>
+    <link href="../assets/css/exemple.css" rel="stylesheet" />
+</head>
+<body>
+    <h1> Exemples Js</h1>
+   
+    <div id="resultat">
+        <input type="text" id="nom" placeholder="Entrez votre nom">
+        <p> Le nom saisi est:</p>
+        <p id="saisie"></p>
+    </div>
+
+    <!-- le nom saisie apparaisse automatiquement dans la zone saisie  -->
+    <!-- "ON" est un attribu de type évènement on veut que ca modifie le texte à afficher , mais pas une bonne pratique de le mettre dans le html -->
+    <!-- une fonction est une suite d'un bloc d'éléments qu'on peut réutiliser plusieurs fois et prennent plusieurs paramètres des parties variables 'dans les moustaches' -->
+    <script> 
+
+        // let nom=prompt('quel est votre nom?');
+        // document.write(nom);
+        // function afficheMessage(msg){
+        //     console.log(msg);
+        // }
+        // afficheMessage('Hello eva');
+        
+        // afficheMessage('jo napot kivanok');
+        
+        // afficheMessage('Tu vas manger quoi leo?');
+
+
+// paramètre passé l'évènement déclanché 
+
+
+const $=(selector)=>document.querySelector(selector);
+
+const addEvt= (selector, type, callback)=>{
+    $(selector).addEventListener(type,callback);
+        };
+    
+
+
+        const keyPressFunction=function(event) {
+            // debugger;
+            //  document.querySelector('#saisie').innerHTML=event.target.value;  
+           
+           $('#saisie').innerHTML=event.target.value;  
+        };
+        // document.addEventListener('keypress', keyPressFunction);
+      
+
+
+        document.querySelector('#nom').addEventListener('keyup', keyPressFunction);
+
+
+
+        
+    </script>
+  <h2> Saisie des éléments de couleur</h2>
+    <fieldset>
+        <legend> Création des éléments</legend>
+      
+        <input type="text" id="elm"placeholder="saisie du text">
+        <input type="color" id="color">
+        <button type="button" id="bt-creer">Créer</button>
+ 
+    </fieldset>
+    <ul id="ul-elements">
+
+    </ul>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            // debugger;
+            addEvt('#nom', 'keyup', keyPressFunction);
+            addEvt('#bt-creer', 'click', ()=>{
+                // debugger;
+                const element=$('#elm');
+                const color=$('#color');
+                const li=document.createElement('li');
+                li.innerText=element.value;
+                li.stylecolor=color.value;
+                $('#ul-elements').appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>
