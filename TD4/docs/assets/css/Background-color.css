@@ -1,0 +1,43 @@
+#button{
+  
+    justify-content: center;
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    width: 90vw;
+}
+button{
+    border-radius: 30px;
+    width: 90%;
+    color: rgb(0, 0, 0);
+    height: 120px;
+    font-size: 25pt;
+    letter-spacing: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: 2px solid rgba(10, 27, 172, 0.753);
+    background-color: white;
+    
+    
+}
+#button :hover{
+    
+    background-color: rgb(39, 38, 38);
+    color: rgb(255, 255, 255);
+    transition: all;
+    transition-duration: 1s;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30pt;
+    letter-spacing: 2rem;
+    font-weight: 600;
+}
