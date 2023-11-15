@@ -5,31 +5,87 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
     background-color:#383838;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
-#interface{
+.interface{
     height: 100px;
-    width: 80%;
-    display: inline-block;
-    flex-direction: row;
+    width: 70%;
+    color: rgb(254, 255, 254);
+    font-family: 'Roboto Condensed', sans-serif;
     border-radius: 85px;
-    border-radius: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
     background: linear-gradient(145deg, #323232, #3c3c3c);
-    box-shadow:  13px 13px 17px #303030,
+    box-shadow:  13px 13px 17px #474747,
                  -13px -13px 17px #404040;
-    /* border-radius: 20px; */
-}
-input{
-    text-align: center;
-    color: rgb(44, 44, 44);
-    font-size: 12pt;
 
 }
+.text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+   
+}
+p {
+    background-color: rgb(228, 228, 228);
+    border: 2px solid rgb(59, 255, 20);
+    width:400px;
+    height: 60px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:  13px 13px 17px #5a5a5a,
+    -13px -13px 17px #5a5a5a;
+    /* font-style: italic; */
+  
+    /* color: white; */
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
 textarea{
     text-align: center;
     color: rgb(44, 44, 44);
     font-size: 8pt;
 
+}
+#police{
+    color: rgb(20, 20, 20);
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 20px;
+    padding: 5px;
+    width: 15%;
+}
+#appliquer{
+    color: rgb(20, 20, 20);
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 20px;
+    padding: 10px;
+    width: 20%;
+}
+#text{
+    color: rgb(20, 20, 20);
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 20px;
+    padding: 10px;
+    width: 20%;
+}
+#couleur{
+    color: rgb(20, 20, 20);
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 20px;
+    padding: 5px;
+    width: 6%;
+}
+#taille{
+    color: rgb(20, 20, 20);
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 20px;
+    padding: 5px;
+ 
+    width: 6%;
 }
