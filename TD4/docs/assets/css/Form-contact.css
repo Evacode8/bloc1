@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 35, 35);
+    margin: 20px;
+}
+/* #Formulaire-contact{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+} */
+form{
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    height: 60px;
+}
+textarea{
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    height: 60px;
+}
+button{
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    height: 60px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    letter-spacing: 1rem;
+}

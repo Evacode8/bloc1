@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(26, 24, 24);
+}
+
+
+
+#Element{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    color: rgb(59, 255, 20);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    letter-spacing: 1rem;
+}
+.card{
+    border: 2px solid rgb(241, 241, 241);
+    height: 500px;
+    width: 60%;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+.card h2{
+    color: rgb(254, 255, 254);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25pt;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+.card p{
+    color: rgb(54, 216, 4);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15pt;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 20px;
+    line-height: 4em;
+}

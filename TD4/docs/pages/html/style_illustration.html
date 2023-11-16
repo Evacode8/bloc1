@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="../../assets/css/style_illustration.css" rel="stylesheet" />
+  <title>Interface de visualisation des attributs de style du texte</title>
+</head>
+<body>
+
+  <div class="texte">
+    <p>Voci le test</p>
+  </div>
+
+  <div class="interface">
+    <label for="couleur">Couleur</label>
+    <input type="color" id="couleur" value="#000000">
+    <label for="taille">Taille</label>
+    <input type="number" id="taille" value="16" min="1" max="100" step="1">
+    <label for="police">Police</label>
+    <select id="police">
+      <option value="Courier New">Courier New</option>
+      <option value="Helvetica">Helvetica</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Arial">Arial</option>
+      <option value="Lucida Handwriting">Lucida Handwriting</option>
+    </select>
+    <input type="checkbox" id="gras"> gras
+    <input type="checkbox" id="italique"> Italique
+    <button id="appliquer">Appliquer</button>
+  </div>
+</body>
+</html>
+
+<script src="../../js/style_illustration.js"></script>
+</html>
