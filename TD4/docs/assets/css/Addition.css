@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(26, 24, 24);
+}
+#calcul{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 80%;
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 20px;
+    padding: 30px;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+}
+input{
+    width: 20%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15pt;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* padding: 20px; */
+}
+
+button{
+    width: 20%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 50px;
+    margin-top: 50px;
+    /* padding: 50px; */
+    justify-content: center;
+    border: 2px solid rgb(59, 255, 20);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    font-size: 14pt;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+button:hover{
+    background: rgb(17,195,224);
+    background: linear-gradient(90deg, rgba(17,195,224,0.9640231092436975) 10%, rgba(12,9,121,1) 41%, rgba(145,0,255,1) 97%);
+    transition: all;
+    transition-duration: 9s;
+    transition: ease-in;
+}
+
