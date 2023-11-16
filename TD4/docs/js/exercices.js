@@ -1,10 +1,10 @@
 
 // exercice 1 : Changer la couleur de fond avec évènement clic 
-    // button.addEventListener("click", function() {
-    //     document.body.style.backgroundColor = "black";
-    //     console.log("click");
+    button.addEventListener("click", function() {
+        document.body.style.backgroundColor = "white";
+        console.log("click");
     
-    //   });
+      });
 
 
 
@@ -118,19 +118,19 @@
 
 // log des infos dans un formulaire de contact 
 
-const form = document.querySelector("form");
+// const form = document.querySelector("form");
 
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
+// form.addEventListener("submit", function(event) {
+//   event.preventDefault();
 
-  const nom = document.querySelector("#nom").value;
-  const email = document.querySelector("#email").value;
-  const message = document.querySelector("#message").value;
+//   const nom = document.querySelector("#nom").value;
+//   const email = document.querySelector("#email").value;
+//   const message = document.querySelector("#message").value;
 
-  console.log("Nom :", nom);
-  console.log("Adresse e-mail :", email);
-  console.log("Message :", message);
-});
+//   console.log("Nom :", nom);
+//   console.log("Adresse e-mail :", email);
+//   console.log("Message :", message);
+// });
 
 
 
