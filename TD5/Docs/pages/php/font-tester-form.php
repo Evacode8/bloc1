@@ -1,31 +1,64 @@
-<?php
-$color=$_GET['color']??'black';
-$size=$_GET['size']??'12';
-$message=$_GET['message']??'rien';
 
-?>
+<!-- 
+// cf payload pour voir la méthode utilisée 
+// if(empty($_GET)){
+//     die("Erreur: rien dans le GET")
+// }
+
+// extract($_GET);
+// version courte de la fonciton 
+
+// if(isset($_GET ['sizeVar'])){
+//     $up=($GET_['sizeVar']=='+')?10:-10;
+//     $size+$up;
+// }
+// if (condition )
+// else
+
+// ()? retourné si vrai : si c est faux 
+?> -->
+
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire PHP</title>
 </head>
 <body>
-    <!-- name permet de récupérer la valeur de l'élément du côté serveur -->
-<form method="GET" action="">
-        <input type="text" placeholder="nom" name="sik" value="<?=$size?>">
-        <input type="text" placeholder="prénom" name="prénom" value="<?=$color?>">
-        <input type="text" placeholder="mail" name="mail">
-        <input type="color">
-        <textarea name="message" placeholder="votre message ici" cols="30" rows="10"><?=$message?></textarea>
 
-        <input type="submit">
-        <!-- <input type="button" id="envoyer"> Envoyer -->
+<?php
+// Vérifier si le formulaire a été soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Vérifier si les champs requis sont remplis
+    if (isset($_POST['message']) && isset($_POST['taille']) && isset($_POST['couleur'])) {
+        $message = $_POST['message'];
+        $taille = $_POST['taille'];
+        $couleur = $_POST['couleur'];
 
-    </form>
+        // Afficher le résultat
+        echo "<p>Message : $message</p>";
+        echo "<p>Taille : $taille</p>";
+        echo "<p>Couleur : <span style='font-size: {$taille}px; color: $couleur;'>$message</span></p>";
+    } else {
+        echo "<p>Tous les champs doivent être remplis.</p>";
+    }
+}
+?>
+
+<!-- Formulaire HTML -->
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+    <label for="taille">Taille :</label>
+    <input type="number" id="taille" name="taille" min="1" max="100"><br><br>
+
+    <label for="couleur">Couleur :</label>
+    <input type="color" id="couleur" name="couleur"><br><br>
+
+    <input type="submit" value="Envoyer">
+</form>
 
 </body>
 </html>
